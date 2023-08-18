@@ -29,7 +29,8 @@
   ],
   "depends": {
     "minecraft": "~1.20",
-    "fabric-api": "*"
+    "fabric-api": "*",
+    "perspective": ">=1.1.0"
   },
   "suggests": {
   }

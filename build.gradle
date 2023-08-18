@@ -29,13 +29,13 @@ dependencies {
 
 	include(modImplementation "com.github.MCLegoMan:fabric-simplelibs:${project.fabricsimplelibs}")
 	include(modImplementation "com.github.MCLegoMan:releasetypeutils:${project.releasetypeutils}")
+	include(implementation "com.github.twitch4j:twitch4j:${project.twitch4j}")
 
 	modImplementation "com.terraformersmc:modmenu:${project.modmenu}"
 	modImplementation "com.github.MCLegoMan:Perspective:${project.perspective}"
 	modImplementation "com.github.Nettakrim:Souper-Secret-Settings:${project.souper_secret_settings}"
 
-	modImplementation "de.guntram.mcmod:crowdin-translate:1.4+1.19.3"
-	include "de.guntram.mcmod:crowdin-translate:1.4+1.19.3"
+	include(modImplementation "de.guntram.mcmod:crowdin-translate:1.4+1.19.3")
 }
 
 processResources {
