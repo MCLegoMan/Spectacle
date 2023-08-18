@@ -7,7 +7,9 @@
 
 package com.mclegoman.spectacle.client;
 
+import com.mclegoman.spectacle.client.twitch_intergration.SpectacleTwitchIntegration;
 import com.mclegoman.spectacle.common.data.SpectacleData;
+import com.mclegoman.spectacle.common.util.SpectacleLogType;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -17,9 +19,10 @@ public class SpectacleClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         try {
-            SpectacleData.LOGGER.info(SpectacleData.PREFIX + "Initializing {}", SpectacleData.ID);
+            SpectacleData.addLog(SpectacleLogType.INFO, "Initializing " + SpectacleData.ID);
+            SpectacleTwitchIntegration.init();
         } catch (Exception error) {
-            SpectacleData.LOGGER.error(SpectacleData.PREFIX + "Failed to initialize {}: {}", SpectacleData.ID, error);
+            SpectacleData.addLog(SpectacleLogType.ERROR, "(SpectacleClient) Failed to initialize: " + error);
         }
     }
 }
