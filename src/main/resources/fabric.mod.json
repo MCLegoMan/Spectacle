@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "spectacle",
+  "version": "${version}",
+  "name": "Spectacle",
+  "description": "WIP",
+  "authors": [
+    "MCLegoMan"
+  ],
+  "contributors": [
+  ],
+  "contact": {
+    "homepage": "https://github.com/mclegoman",
+    "sources": "https://github.com/mclegoman/spectacle",
+    "issues": "https://github.com/mclegoman/spectacle/issues"
+  },
+  "license": [
+    "CC-BY 4.0"
+  ],
+  "icon": "assets/spectacle/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.mclegoman.spectacle.client.SpectacleClient"
+    ]
+  },
+  "mixins": [
+    "spectacle.mixins.json"
+  ],
+  "depends": {
+    "minecraft": "~1.20",
+    "fabric-api": "*"
+  },
+  "suggests": {
+  }
+}
