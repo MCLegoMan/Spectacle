@@ -3,7 +3,7 @@
   "id": "spectacle",
   "version": "${version}",
   "name": "Spectacle",
-  "description": "WIP",
+  "description": "Spectacle is an addon mod to Perspective developed for Fabric/Quilt. It adds Twitch Integration to some of Perspective's features.",
   "authors": [
     "MCLegoMan"
   ],
@@ -33,5 +33,10 @@
     "perspective": ">=1.1.0"
   },
   "suggests": {
+  },
+  "custom": {
+    "modmenu": {
+      "parent": "perspective"
+    }
   }
 }
